@@ -21,7 +21,7 @@
     "idb-file-storage": "^0.1.0",
     "react": "15.5.4",
     "react-dom": "15.5.4",
-    "uuid": "^3.0.1",
+    "uuid": "^14.0.0",
     "web-ext": "1.9.1",
     "webpack": "2.6.1"
   },
