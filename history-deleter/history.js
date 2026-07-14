@@ -75,5 +75,16 @@ function clearAll(e) {
   });
   e.preventDefault();
 }
+const targetNode = document.querySelector("#someElement");
+const observerOptions = {
+  childList: true,
+  attributes: true,
+};
 
+const observer = new MutationObserver(callback);
+observer.observe(targetNode, observerOptions);
+
+/* some time later… */
+
+observer.disconnect();
 document.getElementById('clear').addEventListener('click', clearAll);
