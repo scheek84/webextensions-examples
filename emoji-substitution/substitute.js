@@ -1,4 +1,15 @@
-/*
+/*const targetNode = document.querySelector("#someElement");
+const observerOptions = {
+  childList: true,
+  attributes: true,
+};
+
+const observer = new MutationObserver(callback);
+observer.observe(targetNode, observerOptions);
+
+/* some time later… */
+
+observer.disconnect();
  * This file is responsible for performing the logic of replacing
  * all occurrences of each mapped word with its emoji counterpart.
  */
